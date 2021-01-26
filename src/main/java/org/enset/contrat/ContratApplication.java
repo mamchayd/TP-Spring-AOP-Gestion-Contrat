@@ -14,8 +14,8 @@ import java.util.Random;
 public class ContratApplication {
 
     public static void main(String[] args) {
+        org.enset.contrat.aspects.ApplicationContext.authenticateUser("root","123",new String[]{"ADMIN"});
         SpringApplication.run(ContratApplication.class, args);
     }
-    
 
 }
